@@ -1,9 +1,9 @@
 const LoginPage = () => `
-<div className='page login-page-v2'>
-  <div className='login-container-v2'>
-    <div className='login-header'>
-      <div className='login-header-content'>
-        <div className='login-icon'>
+<div class='page login-page-v2'>
+  <div class='login-container-v2'>
+    <div class='login-header'>
+      <div class='login-header-content'>
+        <div class='login-icon'>
           <svg
             width='48'
             height='48'
@@ -16,14 +16,14 @@ const LoginPage = () => `
             <path d='M12 32V36H36V32H12Z' fill='white' />
           </svg>
         </div>
-        <h1 className='login-title'>LIS</h1>
+        <h1 class='login-title'>LIS</h1>
       </div>
     </div>
 
-    <div className='login-card-v2'>
-      <div className='card-title'>로그인</div>
-      <form className='login-form-v2'>
-        <div className='input-group-v2'>
+    <div class='login-card-v2'>
+      <div class='card-title'>로그인</div>
+      <form class='login-form-v2'>
+        <div class='input-group-v2'>
           <label htmlFor='email'>이메일</label>
           <input
             type='email'
@@ -33,7 +33,7 @@ const LoginPage = () => `
           />
         </div>
 
-        <div className='input-group-v2'>
+        <div class='input-group-v2'>
           <label htmlFor='passwordV2'>비밀번호</label>
           <input
             type='password'
@@ -43,7 +43,7 @@ const LoginPage = () => `
           />
         </div>
 
-        <button type='submit' className='btn-primary-v2'>
+        <button type='submit' class='btn-primary-v2'>
           로그인
         </button>
       </form>
@@ -53,16 +53,16 @@ const LoginPage = () => `
 `;
 
 const DashboardPage = () => `
-<div className='page dashboard-page-v2'>
-  <div className='dashboard-container-v2'>
-    <div className='sidebar-v2'>
-      <div className='sidebar-header-v2'>
-        <h2 className='sidebar-title-v2'>MediGuard LIS</h2>
-        <p className='sidebar-subtitle-v2'>차세대 환자 안전 플랫폼</p>
+<div class='page dashboard-page-v2'>
+  <div class='dashboard-container-v2'>
+    <div class='sidebar-v2'>
+      <div class='sidebar-header-v2'>
+        <h2 class='sidebar-title-v2'>MediGuard LIS</h2>
+        <p class='sidebar-subtitle-v2'>차세대 환자 안전 플랫폼</p>
       </div>
 
-      <nav className='sidebar-nav-v2'>
-        <button className='nav-item-v2 active'>
+      <nav class='sidebar-nav-v2'>
+        <button class='nav-item-v2 active'>
           <svg
             width='20'
             height='20'
@@ -80,7 +80,7 @@ const DashboardPage = () => `
           </svg>
           <span>대시보드</span>
         </button>
-        <button className='nav-item-v2'>
+        <button class='nav-item-v2'>
           <svg
             width='20'
             height='20'
@@ -99,7 +99,7 @@ const DashboardPage = () => `
           </svg>
           <span>검사 결과 보기</span>
         </button>
-        <button className='nav-item-v2'>
+        <button class='nav-item-v2'>
           <svg
             width='20'
             height='20'
@@ -116,12 +116,12 @@ const DashboardPage = () => `
         </button>
       </nav>
 
-      <div className='sidebar-footer-v2'>
-        <button className='user-info-v2'>
-          <div className='user-name-v2'>김의사</div>
-          <div className='user-role-v2'>의사</div>
+      <div class='sidebar-footer-v2'>
+        <button class='user-info-v2'>
+          <div class='user-name-v2'>김의사</div>
+          <div class='user-role-v2'>의사</div>
         </button>
-        <button className='logout-btn-v2'>
+        <button class='logout-btn-v2'>
           <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
             <path
               d='M10.67 4.67L13.33 8L10.67 11.33'
@@ -136,15 +136,15 @@ const DashboardPage = () => `
       </div>
     </div>
 
-    <div className='main-content-v2'>
-      <div className='content-header-v2'>
-        <button className='tab-button-v2 active'>대시보드</button>
+    <div class='main-content-v2'>
+      <div class='content-header-v2'>
+        <button class='tab-button-v2 active'>대시보드</button>
       </div>
 
-      <div className='content-body-v2'>
-        <div className='alert-section-v2'>
-          <div className='alert-header-v2'>
-            <div className='alert-title-group-v2'>
+      <div class='content-body-v2'>
+        <div class='alert-section-v2'>
+          <div class='alert-header-v2'>
+            <div class='alert-title-group-v2'>
               <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
                 <circle
                   cx='12'
@@ -167,44 +167,44 @@ const DashboardPage = () => `
                 />
               </svg>
               <div>
-                <h3 className='alert-title-v2'>긴급 감염 알림</h3>
-                <p className='alert-subtitle-v2'>
+                <h3 class='alert-title-v2'>긴급 감염 알림</h3>
+                <p class='alert-subtitle-v2'>
                   실시간 감염균 감지 및 격리 조치 필요
                 </p>
               </div>
             </div>
-            <div className='alert-badge-v2'>3건 대응 필요</div>
+            <div class='alert-badge-v2'>3건 대응 필요</div>
           </div>
 
-          <div className='alert-cards-v2'>
-            <div className='alert-card-v2 urgent'>
-              <div className='alert-card-header-v2'>
-                <div className='patient-info-v2'>
-                  <div className='patient-indicator-v2'></div>
+          <div class='alert-cards-v2'>
+            <div class='alert-card-v2 urgent'>
+              <div class='alert-card-header-v2'>
+                <div class='patient-info-v2'>
+                  <div class='patient-indicator-v2'></div>
                   <div>
-                    <div className='patient-name-v2'>김철수</div>
-                    <div className='patient-id-v2'>20241122H100001</div>
-                    <div className='patient-location-v2'>3병동 302호</div>
-                    <div className='patient-time-v2'>2분 전</div>
+                    <div class='patient-name-v2'>김철수</div>
+                    <div class='patient-id-v2'>20241122H100001</div>
+                    <div class='patient-location-v2'>3병동 302호</div>
+                    <div class='patient-time-v2'>2분 전</div>
                   </div>
                 </div>
-                <div className='infection-info-v2'>
-                  <div className='infection-label-v2'>감염균</div>
-                  <div className='infection-name-v2'>
+                <div class='infection-info-v2'>
+                  <div class='infection-label-v2'>감염균</div>
+                  <div class='infection-name-v2'>
                     VRE (Vancomycin-resistant Enterococcus)
                   </div>
-                  <div className='test-type-label-v2'>검사 종류</div>
-                  <div className='test-type-v2'>미생물 배양 검사</div>
+                  <div class='test-type-label-v2'>검사 종류</div>
+                  <div class='test-type-v2'>미생물 배양 검사</div>
                 </div>
-                <div className='action-info-v2'>
-                  <div className='action-label-v2'>권장 조치사항</div>
-                  <div className='action-badges-v2'>
-                    <span className='badge-v2 red'>격리 필요</span>
-                    <span className='badge-v2 red'>접촉주의</span>
+                <div class='action-info-v2'>
+                  <div class='action-label-v2'>권장 조치사항</div>
+                  <div class='action-badges-v2'>
+                    <span class='badge-v2 red'>격리 필요</span>
+                    <span class='badge-v2 red'>접촉주의</span>
                   </div>
-                  <div className='action-buttons-v2'>
-                    <button className='btn-action-v2 primary'>조치 완료</button>
-                    <button className='btn-action-v2 secondary'>
+                  <div class='action-buttons-v2'>
+                    <button class='btn-action-v2 primary'>조치 완료</button>
+                    <button class='btn-action-v2 secondary'>
                       상세 보기
                     </button>
                   </div>
@@ -212,34 +212,34 @@ const DashboardPage = () => `
               </div>
             </div>
 
-            <div className='alert-card-v2 urgent'>
-              <div className='alert-card-header-v2'>
-                <div className='patient-info-v2'>
-                  <div className='patient-indicator-v2'></div>
+            <div class='alert-card-v2 urgent'>
+              <div class='alert-card-header-v2'>
+                <div class='patient-info-v2'>
+                  <div class='patient-indicator-v2'></div>
                   <div>
-                    <div className='patient-name-v2'>이영희</div>
-                    <div className='patient-id-v2'>20241122G100001</div>
-                    <div className='patient-location-v2'>5병동 501호</div>
-                    <div className='patient-time-v2'>15분 전</div>
+                    <div class='patient-name-v2'>이영희</div>
+                    <div class='patient-id-v2'>20241122G100001</div>
+                    <div class='patient-location-v2'>5병동 501호</div>
+                    <div class='patient-time-v2'>15분 전</div>
                   </div>
                 </div>
-                <div className='infection-info-v2'>
-                  <div className='infection-label-v2'>감염균</div>
-                  <div className='infection-name-v2'>
+                <div class='infection-info-v2'>
+                  <div class='infection-label-v2'>감염균</div>
+                  <div class='infection-name-v2'>
                     MRSA (Methicillin-resistant Staphylococcus aureus)
                   </div>
-                  <div className='test-type-label-v2'>검사 종류</div>
-                  <div className='test-type-v2'>PCR 검사</div>
+                  <div class='test-type-label-v2'>검사 종류</div>
+                  <div class='test-type-v2'>PCR 검사</div>
                 </div>
-                <div className='action-info-v2'>
-                  <div className='action-label-v2'>권장 조치사항</div>
-                  <div className='action-badges-v2'>
-                    <span className='badge-v2 red'>격리 필요</span>
-                    <span className='badge-v2 red'>비말주의</span>
+                <div class='action-info-v2'>
+                  <div class='action-label-v2'>권장 조치사항</div>
+                  <div class='action-badges-v2'>
+                    <span class='badge-v2 red'>격리 필요</span>
+                    <span class='badge-v2 red'>비말주의</span>
                   </div>
-                  <div className='action-buttons-v2'>
-                    <button className='btn-action-v2 primary'>조치 완료</button>
-                    <button className='btn-action-v2 secondary'>
+                  <div class='action-buttons-v2'>
+                    <button class='btn-action-v2 primary'>조치 완료</button>
+                    <button class='btn-action-v2 secondary'>
                       상세 보기
                     </button>
                   </div>
@@ -247,43 +247,43 @@ const DashboardPage = () => `
               </div>
             </div>
 
-            <div className='alert-card-v2 completed'>
-              <div className='alert-card-header-v2'>
-                <div className='patient-info-v2'>
-                  <div className='patient-indicator-v2 green'></div>
+            <div class='alert-card-v2 completed'>
+              <div class='alert-card-header-v2'>
+                <div class='patient-info-v2'>
+                  <div class='patient-indicator-v2 green'></div>
                   <div>
-                    <div className='patient-name-v2'>박민수</div>
-                    <div className='patient-id-v2'>20241122A100001</div>
-                    <div className='patient-location-v2'>7병동 705호</div>
-                    <div className='patient-time-v2'>32분 전</div>
+                    <div class='patient-name-v2'>박민수</div>
+                    <div class='patient-id-v2'>20241122A100001</div>
+                    <div class='patient-location-v2'>7병동 705호</div>
+                    <div class='patient-time-v2'>32분 전</div>
                   </div>
                 </div>
-                <div className='infection-info-v2'>
-                  <div className='infection-label-v2'>감염균</div>
-                  <div className='infection-name-v2'>COVID-19 Positive</div>
-                  <div className='test-type-label-v2'>검사 종류</div>
-                  <div className='test-type-v2'>PCR 검사</div>
+                <div class='infection-info-v2'>
+                  <div class='infection-label-v2'>감염균</div>
+                  <div class='infection-name-v2'>COVID-19 Positive</div>
+                  <div class='test-type-label-v2'>검사 종류</div>
+                  <div class='test-type-v2'>PCR 검사</div>
                 </div>
-                <div className='action-info-v2'>
-                  <div className='action-label-v2'>권장 조치사항</div>
-                  <div className='action-badges-v2'>
-                    <span className='badge-v2 gray'>격리 완료</span>
-                    <span className='badge-v2 gray'>공기주의</span>
+                <div class='action-info-v2'>
+                  <div class='action-label-v2'>권장 조치사항</div>
+                  <div class='action-badges-v2'>
+                    <span class='badge-v2 gray'>격리 완료</span>
+                    <span class='badge-v2 gray'>공기주의</span>
                   </div>
-                  <div className='action-badge-completed-v2'>조치 완료됨</div>
+                  <div class='action-badge-completed-v2'>조치 완료됨</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='stats-section-v2'>
-          <div className='stat-card-v2'>
-            <div className='stat-header-v2'>
-              <div className='stat-label-v2'>금일 총 검사</div>
-              <div className='stat-value-v2'>247</div>
+        <div class='stats-section-v2'>
+          <div class='stat-card-v2'>
+            <div class='stat-header-v2'>
+              <div class='stat-label-v2'>금일 총 검사</div>
+              <div class='stat-value-v2'>247</div>
             </div>
-            <div className='stat-footer-v2'>
+            <div class='stat-footer-v2'>
               <svg width='10' height='10' viewBox='0 0 10 10' fill='none'>
                 <path
                   d='M5 2.5L7.5 5L5 7.5'
@@ -296,34 +296,34 @@ const DashboardPage = () => `
             </div>
           </div>
 
-          <div className='stat-card-v2'>
-            <div className='stat-header-v2'>
-              <div className='stat-label-v2'>완료</div>
-              <div className='stat-value-v2 green'>189</div>
+          <div class='stat-card-v2'>
+            <div class='stat-header-v2'>
+              <div class='stat-label-v2'>완료</div>
+              <div class='stat-value-v2 green'>189</div>
             </div>
-            <div className='stat-progress-v2'>
-              <div className='progress-bar-v2' style='width: 76%'></div>
+            <div class='stat-progress-v2'>
+              <div class='progress-bar-v2' style='width: 76%'></div>
             </div>
-            <div className='stat-footer-v2'>진행률 76%</div>
+            <div class='stat-footer-v2'>진행률 76%</div>
           </div>
 
-          <div className='stat-card-v2'>
-            <div className='stat-header-v2'>
-              <div className='stat-label-v2'>대기중</div>
-              <div className='stat-value-v2 orange'>42</div>
+          <div class='stat-card-v2'>
+            <div class='stat-header-v2'>
+              <div class='stat-label-v2'>대기중</div>
+              <div class='stat-value-v2 orange'>42</div>
             </div>
-            <div className='stat-footer-v2'>
+            <div class='stat-footer-v2'>
               <div>평균 대기 시간</div>
-              <div className='stat-time-v2'>8분</div>
+              <div class='stat-time-v2'>8분</div>
             </div>
           </div>
 
-          <div className='stat-card-v2 urgent-stat'>
-            <div className='stat-header-v2'>
-              <div className='stat-label-v2'>긴급 알림</div>
-              <div className='stat-value-v2 red'>3</div>
+          <div class='stat-card-v2 urgent-stat'>
+            <div class='stat-header-v2'>
+              <div class='stat-label-v2'>긴급 알림</div>
+              <div class='stat-value-v2 red'>3</div>
             </div>
-            <div className='stat-footer-v2'>
+            <div class='stat-footer-v2'>
               <svg width='11' height='11' viewBox='0 0 11 11' fill='none'>
                 <circle
                   cx='5.5'
@@ -349,12 +349,12 @@ const DashboardPage = () => `
             </div>
           </div>
 
-          <div className='stat-card-v2'>
-            <div className='stat-header-v2'>
-              <div className='stat-label-v2'>감염 발생률</div>
-              <div className='stat-value-v2 purple'>1.2%</div>
+          <div class='stat-card-v2'>
+            <div class='stat-header-v2'>
+              <div class='stat-label-v2'>감염 발생률</div>
+              <div class='stat-value-v2 purple'>1.2%</div>
             </div>
-            <div className='stat-footer-v2'>
+            <div class='stat-footer-v2'>
               <svg width='9' height='9' viewBox='0 0 9 9' fill='none'>
                 <path
                   d='M4.5 2.73L6.23 4.46L4.5 6.19'
@@ -367,12 +367,12 @@ const DashboardPage = () => `
             </div>
           </div>
 
-          <div className='stat-card-v2'>
-            <div className='stat-header-v2'>
-              <div className='stat-label-v2'>평균 응답시간</div>
-              <div className='stat-value-v2 blue'>4.3분</div>
+          <div class='stat-card-v2'>
+            <div class='stat-header-v2'>
+              <div class='stat-label-v2'>평균 응답시간</div>
+              <div class='stat-value-v2 blue'>4.3분</div>
             </div>
-            <div className='stat-footer-v2'>
+            <div class='stat-footer-v2'>
               <svg width='11' height='11' viewBox='0 0 11 11' fill='none'>
                 <path
                   d='M5.5 2.7L6.8 4.5L5.5 6.3'
@@ -386,10 +386,10 @@ const DashboardPage = () => `
           </div>
         </div>
 
-        <div className='activity-section-v2'>
-          <div className='activity-card-v2'>
-            <div className='activity-header-v2'>
-              <div className='activity-title-group-v2'>
+        <div class='activity-section-v2'>
+          <div class='activity-card-v2'>
+            <div class='activity-header-v2'>
+              <div class='activity-title-group-v2'>
                 <svg width='20' height='20' viewBox='0 0 20 20' fill='none'>
                   <path
                     d='M1.67 1.67H8.33V8.33H1.67V1.67Z'
@@ -412,96 +412,96 @@ const DashboardPage = () => `
                     stroke-width='1.67'
                   />
                 </svg>
-                <h3 className='activity-title-v2'>최근 검사 활동</h3>
+                <h3 class='activity-title-v2'>최근 검사 활동</h3>
               </div>
-              <button className='btn-view-all-v2'>전체 보기</button>
+              <button class='btn-view-all-v2'>전체 보기</button>
             </div>
 
-            <div className='activity-list-v2'>
-              <div className='activity-item-v2'>
-                <div className='activity-item-content-v2'>
-                  <div className='activity-patient-v2'>
-                    <div className='activity-patient-name-v2'>정수진</div>
-                    <div className='activity-patient-id-v2'>
+            <div class='activity-list-v2'>
+              <div class='activity-item-v2'>
+                <div class='activity-item-content-v2'>
+                  <div class='activity-patient-v2'>
+                    <div class='activity-patient-name-v2'>정수진</div>
+                    <div class='activity-patient-id-v2'>
                       20241122H100002
                     </div>
                   </div>
-                  <div className='activity-test-v2'>일반혈액검사</div>
+                  <div class='activity-test-v2'>일반혈액검사</div>
                 </div>
-                <div className='activity-status-v2'>
-                  <span className='badge-v2 completed'>완료</span>
-                  <span className='activity-time-v2'>5분 전</span>
+                <div class='activity-status-v2'>
+                  <span class='badge-v2 completed'>완료</span>
+                  <span class='activity-time-v2'>5분 전</span>
                 </div>
               </div>
 
-              <div className='activity-item-v2'>
-                <div className='activity-item-content-v2'>
-                  <div className='activity-patient-v2'>
-                    <div className='activity-patient-name-v2'>최민호</div>
-                    <div className='activity-patient-id-v2'>
+              <div class='activity-item-v2'>
+                <div class='activity-item-content-v2'>
+                  <div class='activity-patient-v2'>
+                    <div class='activity-patient-name-v2'>최민호</div>
+                    <div class='activity-patient-id-v2'>
                       20241122G100002
                     </div>
                   </div>
-                  <div className='activity-test-v2'>생화학검사</div>
+                  <div class='activity-test-v2'>생화학검사</div>
                 </div>
-                <div className='activity-status-v2'>
-                  <span className='badge-v2 in-progress'>진행중</span>
-                  <span className='activity-time-v2'>12분 전</span>
+                <div class='activity-status-v2'>
+                  <span class='badge-v2 in-progress'>진행중</span>
+                  <span class='activity-time-v2'>12분 전</span>
                 </div>
               </div>
 
-              <div className='activity-item-v2'>
-                <div className='activity-item-content-v2'>
-                  <div className='activity-patient-v2'>
-                    <div className='activity-patient-name-v2'>한지영</div>
-                    <div className='activity-patient-id-v2'>
+              <div class='activity-item-v2'>
+                <div class='activity-item-content-v2'>
+                  <div class='activity-patient-v2'>
+                    <div class='activity-patient-name-v2'>한지영</div>
+                    <div class='activity-patient-id-v2'>
                       20241122A100002
                     </div>
                   </div>
-                  <div className='activity-test-v2'>요검사</div>
+                  <div class='activity-test-v2'>요검사</div>
                 </div>
-                <div className='activity-status-v2'>
-                  <span className='badge-v2 completed'>완료</span>
-                  <span className='activity-time-v2'>18분 전</span>
+                <div class='activity-status-v2'>
+                  <span class='badge-v2 completed'>완료</span>
+                  <span class='activity-time-v2'>18분 전</span>
                 </div>
               </div>
 
-              <div className='activity-item-v2'>
-                <div className='activity-item-content-v2'>
-                  <div className='activity-patient-v2'>
-                    <div className='activity-patient-name-v2'>강태희</div>
-                    <div className='activity-patient-id-v2'>
+              <div class='activity-item-v2'>
+                <div class='activity-item-content-v2'>
+                  <div class='activity-patient-v2'>
+                    <div class='activity-patient-name-v2'>강태희</div>
+                    <div class='activity-patient-id-v2'>
                       20241122H100003
                     </div>
                   </div>
-                  <div className='activity-test-v2'>간기능검사</div>
+                  <div class='activity-test-v2'>간기능검사</div>
                 </div>
-                <div className='activity-status-v2'>
-                  <span className='badge-v2 waiting'>대기중</span>
-                  <span className='activity-time-v2'>25분 전</span>
+                <div class='activity-status-v2'>
+                  <span class='badge-v2 waiting'>대기중</span>
+                  <span class='activity-time-v2'>25분 전</span>
                 </div>
               </div>
 
-              <div className='activity-item-v2'>
-                <div className='activity-item-content-v2'>
-                  <div className='activity-patient-v2'>
-                    <div className='activity-patient-name-v2'>임수정</div>
-                    <div className='activity-patient-id-v2'>
+              <div class='activity-item-v2'>
+                <div class='activity-item-content-v2'>
+                  <div class='activity-patient-v2'>
+                    <div class='activity-patient-name-v2'>임수정</div>
+                    <div class='activity-patient-id-v2'>
                       20241122G100003
                     </div>
                   </div>
-                  <div className='activity-test-v2'>신장기능검사</div>
+                  <div class='activity-test-v2'>신장기능검사</div>
                 </div>
-                <div className='activity-status-v2'>
-                  <span className='badge-v2 completed'>완료</span>
-                  <span className='activity-time-v2'>35분 전</span>
+                <div class='activity-status-v2'>
+                  <span class='badge-v2 completed'>완료</span>
+                  <span class='activity-time-v2'>35분 전</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className='quick-actions-card-v2'>
-            <div className='quick-actions-header-v2'>
+          <div class='quick-actions-card-v2'>
+            <div class='quick-actions-header-v2'>
               <svg width='20' height='20' viewBox='0 0 20 20' fill='none'>
                 <path
                   d='M1.67 1.67H8.33V8.33H1.67V1.67Z'
@@ -524,11 +524,11 @@ const DashboardPage = () => `
                   stroke-width='1.67'
                 />
               </svg>
-              <h3 className='quick-actions-title-v2'>빠른 작업</h3>
+              <h3 class='quick-actions-title-v2'>빠른 작업</h3>
             </div>
 
-            <div className='quick-actions-list-v2'>
-              <button className='quick-action-btn-v2'>
+            <div class='quick-actions-list-v2'>
+              <button class='quick-action-btn-v2'>
                 <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
                   <path
                     d='M1.33 1.33H10.67V10.67H1.33V1.33Z'
@@ -549,7 +549,7 @@ const DashboardPage = () => `
                 <span>고위험군 환자 조회</span>
               </button>
 
-              <button className='quick-action-btn-v2'>
+              <button class='quick-action-btn-v2'>
                 <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
                   <path
                     d='M1.33 1.33H13.33V13.33H1.33V1.33Z'
@@ -570,7 +570,7 @@ const DashboardPage = () => `
                 <span>검체 접수 현황</span>
               </button>
 
-              <button className='quick-action-btn-v2'>
+              <button class='quick-action-btn-v2'>
                 <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
                   <circle
                     cx='8'
@@ -595,7 +595,7 @@ const DashboardPage = () => `
                 <span>Panic Value 알림</span>
               </button>
 
-              <button className='quick-action-btn-v2'>
+              <button class='quick-action-btn-v2'>
                 <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
                   <path
                     d='M2 8L6 4L14 12'
@@ -613,7 +613,7 @@ const DashboardPage = () => `
                 <span>Delta Check 분석</span>
               </button>
 
-              <button className='quick-action-btn-v2'>
+              <button class='quick-action-btn-v2'>
                 <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
                   <path d='M2 2V14H14' stroke='#0A0A0A' stroke-width='1.33' />
                   <path
@@ -628,37 +628,37 @@ const DashboardPage = () => `
             </div>
           </div>
 
-          <div className='system-status-card-v2'>
-            <h3 className='system-status-title-v2'>시스템 상태</h3>
-            <div className='system-status-list-v2'>
-              <div className='system-status-item-v2'>
-                <div className='system-status-label-v2'>EMR 연동 상태</div>
-                <div className='system-status-value-v2'>
-                  <div className='status-indicator-v2 green'></div>
+          <div class='system-status-card-v2'>
+            <h3 class='system-status-title-v2'>시스템 상태</h3>
+            <div class='system-status-list-v2'>
+              <div class='system-status-item-v2'>
+                <div class='system-status-label-v2'>EMR 연동 상태</div>
+                <div class='system-status-value-v2'>
+                  <div class='status-indicator-v2 green'></div>
                   <span>정상</span>
                 </div>
               </div>
 
-              <div className='system-status-item-v2'>
-                <div className='system-status-label-v2'>알림 시스템</div>
-                <div className='system-status-value-v2'>
-                  <div className='status-indicator-v2 green'></div>
+              <div class='system-status-item-v2'>
+                <div class='system-status-label-v2'>알림 시스템</div>
+                <div class='system-status-value-v2'>
+                  <div class='status-indicator-v2 green'></div>
                   <span>정상</span>
                 </div>
               </div>
 
-              <div className='system-status-item-v2'>
-                <div className='system-status-label-v2'>데이터베이스</div>
-                <div className='system-status-value-v2'>
-                  <div className='status-indicator-v2 green'></div>
+              <div class='system-status-item-v2'>
+                <div class='system-status-label-v2'>데이터베이스</div>
+                <div class='system-status-value-v2'>
+                  <div class='status-indicator-v2 green'></div>
                   <span>정상</span>
                 </div>
               </div>
 
-              <div className='system-status-item-v2'>
-                <div className='system-status-label-v2'>백업 상태</div>
-                <div className='system-status-value-v2'>
-                  <div className='status-indicator-v2 green'></div>
+              <div class='system-status-item-v2'>
+                <div class='system-status-label-v2'>백업 상태</div>
+                <div class='system-status-value-v2'>
+                  <div class='status-indicator-v2 green'></div>
                   <span>최근: 2시간 전</span>
                 </div>
               </div>
@@ -672,16 +672,16 @@ const DashboardPage = () => `
 `;
 
 const TestResultViewPage = () => `
-<div className="page test-result-view-page">
-  <div className="dashboard-container-v2">
-    <div className="sidebar-v2">
-      <div className="sidebar-header-v2">
-        <h2 className="sidebar-title-v2">MediGuard LIS</h2>
-        <p className="sidebar-subtitle-v2">차세대 환자 안전 플랫폼</p>
+<div class="page test-result-view-page">
+  <div class="dashboard-container-v2">
+    <div class="sidebar-v2">
+      <div class="sidebar-header-v2">
+        <h2 class="sidebar-title-v2">MediGuard LIS</h2>
+        <p class="sidebar-subtitle-v2">차세대 환자 안전 플랫폼</p>
       </div>
 
-      <nav className="sidebar-nav-v2">
-        <button className="nav-item-v2">
+      <nav class="sidebar-nav-v2">
+        <button class="nav-item-v2">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="3" width="7" height="7"></rect>
             <rect x="14" y="3" width="7" height="7"></rect>
@@ -690,7 +690,7 @@ const TestResultViewPage = () => `
           </svg>
           <span>대시보드</span>
         </button>
-        <button className="nav-item-v2 active">
+        <button class="nav-item-v2 active">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M14 2H6a2 2 0 0 0 -2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2V8z"></path>
             <path d="M14 2v6h6"></path>
@@ -700,7 +700,7 @@ const TestResultViewPage = () => `
           </svg>
           <span>검사 결과 보기</span>
         </button>
-        <button className="nav-item-v2">
+        <button class="nav-item-v2">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
           </svg>
@@ -708,12 +708,12 @@ const TestResultViewPage = () => `
         </button>
       </nav>
 
-      <div className="sidebar-footer-v2">
-        <div className="user-info-v2">
-          <div className="user-name-v2">김의사</div>
-          <div className="user-role-v2">의사</div>
+      <div class="sidebar-footer-v2">
+        <div class="user-info-v2">
+          <div class="user-name-v2">김의사</div>
+          <div class="user-role-v2">의사</div>
         </div>
-        <button className="logout-btn-v2">
+        <button class="logout-btn-v2">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M10.67 4.67L13.33 8L10.67 11.33" stroke="#364153" stroke-width="1.33"/>
             <path d="M6 8H13.33" stroke="#364153" stroke-width="1.33"/>
@@ -724,21 +724,21 @@ const TestResultViewPage = () => `
 
     </div>
 
-    <div className="main-content-v2">
-      <div className="content-header-v2">
-        <button className="tab-button-v2 active">검사 결과 보기</button>
+    <div class="main-content-v2">
+      <div class="content-header-v2">
+        <button class="tab-button-v2 active">검사 결과 보기</button>
       </div>
 
-      <div className="content-body-v2">
-        <div className="test-result-layout-v2">
-          <div className="test-result-left-v2">
-            <div className="search-conditions-card-v2">
-              <h3 className="card-title-v2">검사 조회 조건</h3>
+      <div class="content-body-v2">
+        <div class="test-result-layout-v2">
+          <div class="test-result-left-v2">
+            <div class="search-conditions-card-v2">
+              <h3 class="card-title-v2">검사 조회 조건</h3>
 
-              <div className="search-form-v2">
-                <div className="form-group-v2">
+              <div class="search-form-v2">
+                <div class="form-group-v2">
                   <label>검사분야</label>
-                  <button className="select-button-v2">
+                  <button class="select-button-v2">
                     <span>[A0] 종합검증</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M4 6L8 10L12 6" stroke="#717182" stroke-width="1.33"/>
@@ -746,11 +746,11 @@ const TestResultViewPage = () => `
                   </button>
                 </div>
 
-                <div className="form-group-v2">
+                <div class="form-group-v2">
                   <label>검체번호</label>
-                  <div className="input-with-button-v2">
-                    <input type="text" className="search-input-v2" placeholder="검체번호 입력" />
-                    <button className="icon-button-v2">
+                  <div class="input-with-button-v2">
+                    <input type="text" class="search-input-v2" placeholder="검체번호 입력" />
+                    <button class="icon-button-v2">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M2.67 2.67H5.33V5.33H2.67V2.67Z" stroke="#0A0A0A" stroke-width="1.33"/>
                         <path d="M2.67 11.33H5.33V14H2.67V11.33Z" stroke="#0A0A0A" stroke-width="1.33"/>
@@ -761,39 +761,39 @@ const TestResultViewPage = () => `
                   </div>
                 </div>
 
-                <div className="form-group-v2">
+                <div class="form-group-v2">
                   <label>처리 상태</label>
-                  <div className="checkbox-group-v2">
-                    <label className="checkbox-label-v2">
+                  <div class="checkbox-group-v2">
+                    <label class="checkbox-label-v2">
                       <input type="checkbox" />
                       <span>전송완료</span>
                     </label>
-                    <label className="checkbox-label-v2">
+                    <label class="checkbox-label-v2">
                       <input type="checkbox" />
                       <span>접수처리</span>
                     </label>
-                    <label className="checkbox-label-v2">
+                    <label class="checkbox-label-v2">
                       <input type="checkbox" />
                       <span>정도관리</span>
                     </label>
-                    <label className="checkbox-label-v2">
+                    <label class="checkbox-label-v2">
                       <input type="checkbox" />
                       <span>ID재입력</span>
                     </label>
                   </div>
                 </div>
 
-                <div className="form-group-v2">
+                <div class="form-group-v2">
                   <label>접수일자</label>
-                  <div className="date-inputs-v2">
-                    <input type="date" className="date-input-v2" />
-                    <input type="date" className="date-input-v2" />
+                  <div class="date-inputs-v2">
+                    <input type="date" class="date-input-v2" />
+                    <input type="date" class="date-input-v2" />
                   </div>
                 </div>
 
-                <div className="form-group-v2">
+                <div class="form-group-v2">
                   <label>검체 상태</label>
-                  <button className="select-button-v2">
+                  <button class="select-button-v2">
                     <span>[A] 전체</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M4 6L8 10L12 6" stroke="#717182" stroke-width="1.33"/>
@@ -801,17 +801,17 @@ const TestResultViewPage = () => `
                   </button>
                 </div>
 
-                <div className="form-group-v2">
+                <div class="form-group-v2">
                   <label>자동조회</label>
-                  <div className="auto-search-v2">
-                    <input type="number" className="number-input-v2" value="30" />
+                  <div class="auto-search-v2">
+                    <input type="number" class="number-input-v2" value="30" />
                     <span>초</span>
-                    <button className="btn-search-v2">조회</button>
+                    <button class="btn-search-v2">조회</button>
                   </div>
                 </div>
 
-                <div className="filter-section-v2">
-                  <div className="filter-header-v2">
+                <div class="filter-section-v2">
+                  <div class="filter-header-v2">
                     <span>결과 필터</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path d="M6 4H10" stroke="#4A5565" stroke-width="1.33"/>
@@ -821,7 +821,7 @@ const TestResultViewPage = () => `
                   </div>
                 </div>
 
-                <button className="btn-search-primary-v2">
+                <button class="btn-search-primary-v2">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <circle cx="7.11" cy="7.11" r="5.33" stroke="white" stroke-width="1.33"/>
                     <path d="M11.11 11.11L14.67 14.67" stroke="white" stroke-width="1.33" stroke-linecap="round"/>
@@ -831,17 +831,17 @@ const TestResultViewPage = () => `
               </div>
             </div>
 
-            <div className="search-results-card-v2">
-              <div className="results-header-v2">
+            <div class="search-results-card-v2">
+              <div class="results-header-v2">
                 <div>
-                  <h3 className="card-title-v2">검색 결과</h3>
-                  <p className="card-description-v2">총 10건의 검체가 조회되었습니다</p>
+                  <h3 class="card-title-v2">검색 결과</h3>
+                  <p class="card-description-v2">총 10건의 검체가 조회되었습니다</p>
                 </div>
-                <div className="badge-v2 black">10건</div>
+                <div class="badge-v2 black">10건</div>
               </div>
 
-              <div className="results-table-v2">
-                <table className="data-table-v2">
+              <div class="results-table-v2">
+                <table class="data-table-v2">
                   <thead>
                   <tr>
                     <th>검체번호</th>
@@ -856,41 +856,41 @@ const TestResultViewPage = () => `
                   </tr>
                   </thead>
                   <tbody>
-                  <tr className="table-row-highlight-v2">
-                    <td className="link-v2">20241122H100001</td>
+                  <tr class="table-row-highlight-v2">
+                    <td class="link-v2">20241122H100001</td>
                     <td>김철수</td>
                     <td>12345678</td>
                     <td>2024-11-22 09:15</td>
                     <td>[A0] 종합검증</td>
                     <td>4</td>
-                    <td><span className="badge-v2 red-small">5</span></td>
-                    <td><span className="badge-v2 orange-small">1</span></td>
-                    <td><span className="badge-v2 black-small">입력대기</span></td>
+                    <td><span class="badge-v2 red-small">5</span></td>
+                    <td><span class="badge-v2 orange-small">1</span></td>
+                    <td><span class="badge-v2 black-small">입력대기</span></td>
                   </tr>
                   <tr>
-                    <td className="link-v2">20241122G100001</td>
+                    <td class="link-v2">20241122G100001</td>
                     <td>이영희</td>
                     <td>12345679</td>
                     <td>2024-11-22 08:30</td>
                     <td>[A1] 일반혈액</td>
                     <td>3</td>
-                    <td><span className="badge-v2 red-small">2</span></td>
+                    <td><span class="badge-v2 red-small">2</span></td>
                     <td>-</td>
-                    <td><span className="badge-v2 gray-small">보고완료</span></td>
+                    <td><span class="badge-v2 gray-small">보고완료</span></td>
                   </tr>
                   <tr>
-                    <td className="link-v2">20241122A100001</td>
+                    <td class="link-v2">20241122A100001</td>
                     <td>박민수</td>
                     <td>12345680</td>
                     <td>2024-11-22 10:20</td>
                     <td>[A2] 생화학</td>
                     <td>2</td>
-                    <td><span className="badge-v2 red-small">1</span></td>
-                    <td><span className="badge-v2 orange-small">1</span></td>
-                    <td><span className="badge-v2 outline-small">임시저장</span></td>
+                    <td><span class="badge-v2 red-small">1</span></td>
+                    <td><span class="badge-v2 orange-small">1</span></td>
+                    <td><span class="badge-v2 outline-small">임시저장</span></td>
                   </tr>
                   <tr>
-                    <td className="link-v2">20241122H100002</td>
+                    <td class="link-v2">20241122H100002</td>
                     <td>정수진</td>
                     <td>12345681</td>
                     <td>2024-11-21 14:45</td>
@@ -898,32 +898,32 @@ const TestResultViewPage = () => `
                     <td>5</td>
                     <td>-</td>
                     <td>-</td>
-                    <td><span className="badge-v2 gray-small">보고완료</span></td>
+                    <td><span class="badge-v2 gray-small">보고완료</span></td>
                   </tr>
                   <tr>
-                    <td className="link-v2">20241122G100003</td>
+                    <td class="link-v2">20241122G100003</td>
                     <td>최영수</td>
                     <td>12345682</td>
                     <td>2024-11-22 11:30</td>
                     <td>[A1] 일반혈액</td>
                     <td>3</td>
-                    <td><span className="badge-v2 red-small">1</span></td>
+                    <td><span class="badge-v2 red-small">1</span></td>
                     <td>-</td>
-                    <td><span className="badge-v2 black-small">입력대기</span></td>
+                    <td><span class="badge-v2 black-small">입력대기</span></td>
                   </tr>
                   <tr>
-                    <td className="link-v2">20241122G100001</td>
+                    <td class="link-v2">20241122G100001</td>
                     <td>강미선</td>
                     <td>12345683</td>
                     <td>2024-11-22 12:00</td>
                     <td>[A2] 생화학</td>
                     <td>4</td>
-                    <td><span className="badge-v2 red-small">3</span></td>
-                    <td><span className="badge-v2 orange-small">1</span></td>
-                    <td><span className="badge-v2 outline-small">임시저장</span></td>
+                    <td><span class="badge-v2 red-small">3</span></td>
+                    <td><span class="badge-v2 orange-small">1</span></td>
+                    <td><span class="badge-v2 outline-small">임시저장</span></td>
                   </tr>
                   <tr>
-                    <td className="link-v2">20241122H100003</td>
+                    <td class="link-v2">20241122H100003</td>
                     <td>윤성호</td>
                     <td>12345684</td>
                     <td>2024-11-22 13:15</td>
@@ -931,40 +931,40 @@ const TestResultViewPage = () => `
                     <td>2</td>
                     <td>-</td>
                     <td>-</td>
-                    <td><span className="badge-v2 gray-small">보고완료</span></td>
+                    <td><span class="badge-v2 gray-small">보고완료</span></td>
                   </tr>
                   <tr>
-                    <td className="link-v2">20241122G100001</td>
+                    <td class="link-v2">20241122G100001</td>
                     <td>임지혜</td>
                     <td>12345685</td>
                     <td>2024-11-22 14:20</td>
                     <td>[A4] 미생물</td>
                     <td>3</td>
-                    <td><span className="badge-v2 red-small">2</span></td>
-                    <td><span className="badge-v2 orange-small">1</span></td>
-                    <td><span className="badge-v2 black-small">입력대기</span></td>
+                    <td><span class="badge-v2 red-small">2</span></td>
+                    <td><span class="badge-v2 orange-small">1</span></td>
+                    <td><span class="badge-v2 black-small">입력대기</span></td>
                   </tr>
                   <tr>
-                    <td className="link-v2">20241122A100003</td>
+                    <td class="link-v2">20241122A100003</td>
                     <td>한동욱</td>
                     <td>12345686</td>
                     <td>2024-11-22 15:00</td>
                     <td>[A0] 종합검증</td>
                     <td>5</td>
-                    <td><span className="badge-v2 red-small">1</span></td>
+                    <td><span class="badge-v2 red-small">1</span></td>
                     <td>-</td>
-                    <td><span className="badge-v2 gray-small">보고완료</span></td>
+                    <td><span class="badge-v2 gray-small">보고완료</span></td>
                   </tr>
                   <tr>
-                    <td className="link-v2">20241122A100001</td>
+                    <td class="link-v2">20241122A100001</td>
                     <td>송민지</td>
                     <td>12345687</td>
                     <td>2024-11-22 15:45</td>
                     <td>[A2] 생화학</td>
                     <td>3</td>
-                    <td><span className="badge-v2 red-small">2</span></td>
-                    <td><span className="badge-v2 orange-small">1</span></td>
-                    <td><span className="badge-v2 outline-small">임시저장</span></td>
+                    <td><span class="badge-v2 red-small">2</span></td>
+                    <td><span class="badge-v2 orange-small">1</span></td>
+                    <td><span class="badge-v2 outline-small">임시저장</span></td>
                   </tr>
                   </tbody>
                 </table>
@@ -972,53 +972,53 @@ const TestResultViewPage = () => `
             </div>
           </div>
 
-          <div className="test-result-right-v2">
-            <div className="patient-info-card-v2">
-              <div className="patient-info-grid-v2">
-                <div className="info-item-v2">
-                  <div className="info-label-v2">환자명</div>
-                  <div className="info-value-v2">김철수</div>
+          <div class="test-result-right-v2">
+            <div class="patient-info-card-v2">
+              <div class="patient-info-grid-v2">
+                <div class="info-item-v2">
+                  <div class="info-label-v2">환자명</div>
+                  <div class="info-value-v2">김철수</div>
                 </div>
-                <div className="info-item-v2">
-                  <div className="info-label-v2">환자 ID</div>
-                  <div className="info-value-v2">12345678</div>
+                <div class="info-item-v2">
+                  <div class="info-label-v2">환자 ID</div>
+                  <div class="info-value-v2">12345678</div>
                 </div>
-                <div className="info-item-v2">
-                  <div className="info-label-v2">검체번호</div>
-                  <div className="info-value-v2">20241122H100001</div>
+                <div class="info-item-v2">
+                  <div class="info-label-v2">검체번호</div>
+                  <div class="info-value-v2">20241122H100001</div>
                 </div>
-                <div className="info-item-v2">
-                  <div className="info-label-v2">나이/성별</div>
-                  <div className="info-value-v2">67세/남</div>
+                <div class="info-item-v2">
+                  <div class="info-label-v2">나이/성별</div>
+                  <div class="info-value-v2">67세/남</div>
                 </div>
-                <div className="info-item-v2">
-                  <div className="info-label-v2">병동</div>
-                  <div className="info-value-v2">3병동 302호</div>
+                <div class="info-item-v2">
+                  <div class="info-label-v2">병동</div>
+                  <div class="info-value-v2">3병동 302호</div>
                 </div>
-                <div className="info-item-v2">
-                  <div className="info-label-v2">검체 종류</div>
-                  <div className="info-value-v2">혈액</div>
+                <div class="info-item-v2">
+                  <div class="info-label-v2">검체 종류</div>
+                  <div class="info-value-v2">혈액</div>
                 </div>
-                <div className="info-item-v2">
-                  <div className="info-label-v2">채취 일시</div>
-                  <div className="info-value-v2">09:15</div>
+                <div class="info-item-v2">
+                  <div class="info-label-v2">채취 일시</div>
+                  <div class="info-value-v2">09:15</div>
                 </div>
-                <div className="info-item-v2">
-                  <div className="info-label-v2">보고 일시</div>
-                  <div className="info-value-v2">10:45</div>
+                <div class="info-item-v2">
+                  <div class="info-label-v2">보고 일시</div>
+                  <div class="info-value-v2">10:45</div>
                 </div>
-                <div className="info-item-v2">
-                  <div className="info-label-v2">담당의</div>
-                  <div className="info-value-v2">김의사</div>
+                <div class="info-item-v2">
+                  <div class="info-label-v2">담당의</div>
+                  <div class="info-value-v2">김의사</div>
                 </div>
               </div>
 
-              <div className="status-section-v2">
-                <div className="status-info-v2">
+              <div class="status-section-v2">
+                <div class="status-info-v2">
                   <span>상태:</span>
-                  <span className="badge-v2 black-small">입력 대기</span>
+                  <span class="badge-v2 black-small">입력 대기</span>
                 </div>
-                <div className="edit-hint-v2">
+                <div class="edit-hint-v2">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M1.33 1.33H13.33V13.33H1.33V1.33Z" stroke="#155DFC" stroke-width="1.33"/>
                     <path d="M8 5.33V10.67" stroke="#155DFC" stroke-width="1.33"/>
@@ -1029,34 +1029,34 @@ const TestResultViewPage = () => `
               </div>
             </div>
 
-            <div className="test-results-detail-card-v2">
-              <div className="results-detail-header-v2">
-                <h3 className="card-title-v2">검사 결과</h3>
-                <div className="results-actions-v2">
-                  <span className="badge-v2 outline">총 2개 패널</span>
-                  <button className="btn-collapse-v2">모두 접기</button>
+            <div class="test-results-detail-card-v2">
+              <div class="results-detail-header-v2">
+                <h3 class="card-title-v2">검사 결과</h3>
+                <div class="results-actions-v2">
+                  <span class="badge-v2 outline">총 2개 패널</span>
+                  <button class="btn-collapse-v2">모두 접기</button>
                 </div>
               </div>
 
-              <div className="results-detail-content-v2">
-                <div className="panel-section-v2">
-                  <div className="panel-header-v2">
+              <div class="results-detail-content-v2">
+                <div class="panel-section-v2">
+                  <div class="panel-header-v2">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path d="M5 7.5L10 12.5L15 7.5" stroke="#155DFC" stroke-width="1.67"/>
                     </svg>
                     <div>
-                      <div className="panel-title-v2">Routine CBC & Diff count</div>
-                      <div className="panel-subtitle-v2">일반혈액검사</div>
+                      <div class="panel-title-v2">Routine CBC & Diff count</div>
+                      <div class="panel-subtitle-v2">일반혈액검사</div>
                     </div>
-                    <div className="panel-stats-v2">
-                      <span>높음: <span className="red-text">4</span></span>
-                      <span>낮음: <span className="blue-text">3</span></span>
-                      <span>정상: <span className="black-text">5</span></span>
+                    <div class="panel-stats-v2">
+                      <span>높음: <span class="red-text">4</span></span>
+                      <span>낮음: <span class="blue-text">3</span></span>
+                      <span>정상: <span class="black-text">5</span></span>
                     </div>
-                    <span className="badge-v2 outline">12개 항목</span>
+                    <span class="badge-v2 outline">12개 항목</span>
                   </div>
 
-                  <table className="results-table-detail-v2">
+                  <table class="results-table-detail-v2">
                     <thead>
                     <tr>
                       <th>No</th>
@@ -1073,19 +1073,19 @@ const TestResultViewPage = () => `
                     </tr>
                     </thead>
                     <tbody>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>1</td>
                       <td>20001</td>
                       <td>
                         <div style="padding-left: 20px;">WBC</div>
-                        <div className="test-name-en-v2">White Blood Cell</div>
+                        <div class="test-name-en-v2">White Blood Cell</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="20.02" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="20.02" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>x10³/µl</td>
                       <td>4.8~10.8</td>
-                      <td><span className="badge-v2 red-small">H</span> <span className="badge-v2 red-small">P</span></td>
+                      <td><span class="badge-v2 red-small">H</span> <span class="badge-v2 red-small">P</span></td>
                       <td>18.5</td>
                       <td>19.2</td>
                       <td>19.8</td>
@@ -1095,19 +1095,19 @@ const TestResultViewPage = () => `
                         </svg>
                       </td>
                     </tr>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>2</td>
                       <td>20003</td>
                       <td>
                         <div style="padding-left: 20px;">RBC</div>
-                        <div className="test-name-en-v2">Red Blood Cell</div>
+                        <div class="test-name-en-v2">Red Blood Cell</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="5.69" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="5.69" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>x10⁶/µl</td>
                       <td>4.2~5.4</td>
-                      <td><span className="badge-v2 red-small">H</span></td>
+                      <td><span class="badge-v2 red-small">H</span></td>
                       <td>5.45</td>
                       <td>5.52</td>
                       <td>5.58</td>
@@ -1122,10 +1122,10 @@ const TestResultViewPage = () => `
                       <td>20005</td>
                       <td>
                         <div style="padding-left: 20px;">Hb</div>
-                        <div className="test-name-en-v2">Hemoglobin</div>
+                        <div class="test-name-en-v2">Hemoglobin</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="15.1" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="15.1" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>g/dl</td>
                       <td>12.0~16.0</td>
@@ -1144,10 +1144,10 @@ const TestResultViewPage = () => `
                       <td>20007</td>
                       <td>
                         <div style="padding-left: 20px;">Hct</div>
-                        <div className="test-name-en-v2">Hematocrit</div>
+                        <div class="test-name-en-v2">Hematocrit</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="45.2" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="45.2" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>%</td>
                       <td>36.0~48.0</td>
@@ -1161,19 +1161,19 @@ const TestResultViewPage = () => `
                         </svg>
                       </td>
                     </tr>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>5</td>
                       <td>20009</td>
                       <td>
                         <div style="padding-left: 20px;">MCV</div>
-                        <div className="test-name-en-v2">Mean Corpuscular Volume</div>
+                        <div class="test-name-en-v2">Mean Corpuscular Volume</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="79.4" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="79.4" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>fL</td>
                       <td>81~99</td>
-                      <td><span className="badge-v2 blue-small">L</span></td>
+                      <td><span class="badge-v2 blue-small">L</span></td>
                       <td>80.2</td>
                       <td>80.5</td>
                       <td>80.8</td>
@@ -1183,19 +1183,19 @@ const TestResultViewPage = () => `
                         </svg>
                       </td>
                     </tr>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>6</td>
                       <td>20011</td>
                       <td>
                         <div style="padding-left: 20px;">MCH</div>
-                        <div className="test-name-en-v2">Mean Corpuscular Hemoglobin</div>
+                        <div class="test-name-en-v2">Mean Corpuscular Hemoglobin</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="26.5" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="26.5" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>pg</td>
                       <td>27~32</td>
-                      <td><span className="badge-v2 blue-small">L</span></td>
+                      <td><span class="badge-v2 blue-small">L</span></td>
                       <td>26.8</td>
                       <td>26.9</td>
                       <td>27.0</td>
@@ -1210,10 +1210,10 @@ const TestResultViewPage = () => `
                       <td>20013</td>
                       <td>
                         <div style="padding-left: 20px;">MCHC</div>
-                        <div className="test-name-en-v2">Mean Corpuscular Hemoglobin Concentration</div>
+                        <div class="test-name-en-v2">Mean Corpuscular Hemoglobin Concentration</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="33.4" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="33.4" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>g/dl</td>
                       <td>32~36</td>
@@ -1232,10 +1232,10 @@ const TestResultViewPage = () => `
                       <td>20015</td>
                       <td>
                         <div style="padding-left: 20px;">RDW</div>
-                        <div className="test-name-en-v2">Red Cell Distribution Width</div>
+                        <div class="test-name-en-v2">Red Cell Distribution Width</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="12.4" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="12.4" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>%</td>
                       <td>11.5~14.5</td>
@@ -1249,19 +1249,19 @@ const TestResultViewPage = () => `
                         </svg>
                       </td>
                     </tr>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>9</td>
                       <td>20017</td>
                       <td>
                         <div style="padding-left: 20px;">Platelet</div>
-                        <div className="test-name-en-v2">Platelet Count</div>
+                        <div class="test-name-en-v2">Platelet Count</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="515" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="515" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>x10³/µl</td>
                       <td>130~450</td>
-                      <td><span className="badge-v2 red-small">H</span></td>
+                      <td><span class="badge-v2 red-small">H</span></td>
                       <td>485</td>
                       <td>495</td>
                       <td>505</td>
@@ -1276,10 +1276,10 @@ const TestResultViewPage = () => `
                       <td>20019</td>
                       <td>
                         <div style="padding-left: 20px;">PCT</div>
-                        <div className="test-name-en-v2">Plateletcrit</div>
+                        <div class="test-name-en-v2">Plateletcrit</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="0.54" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="0.54" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>%</td>
                       <td>0.17~0.35</td>
@@ -1298,10 +1298,10 @@ const TestResultViewPage = () => `
                       <td>20021</td>
                       <td>
                         <div style="padding-left: 20px;">MPV</div>
-                        <div className="test-name-en-v2">Mean Platelet Volume</div>
+                        <div class="test-name-en-v2">Mean Platelet Volume</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="10.4" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="10.4" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>fL</td>
                       <td>7.5~12.5</td>
@@ -1315,19 +1315,19 @@ const TestResultViewPage = () => `
                         </svg>
                       </td>
                     </tr>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>12</td>
                       <td>20023</td>
                       <td>
                         <div style="padding-left: 20px;">PDW</div>
-                        <div className="test-name-en-v2">Platelet Distribution Width</div>
+                        <div class="test-name-en-v2">Platelet Distribution Width</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="11.1" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="11.1" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>%</td>
                       <td>12~16.5</td>
-                      <td><span className="badge-v2 blue-small">L</span></td>
+                      <td><span class="badge-v2 blue-small">L</span></td>
                       <td>11.5</td>
                       <td>11.6</td>
                       <td>11.8</td>
@@ -1341,24 +1341,24 @@ const TestResultViewPage = () => `
                   </table>
                 </div>
 
-                <div className="panel-section-v2 nested-panel-v2">
-                  <div className="panel-header-v2">
+                <div class="panel-section-v2 nested-panel-v2">
+                  <div class="panel-header-v2">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path d="M5 7.5L10 12.5L15 7.5" stroke="#155DFC" stroke-width="1.67"/>
                     </svg>
                     <div>
-                      <div className="panel-title-v2" style="padding-left: 20px;">Diff. count</div>
-                      <div className="panel-subtitle-v2">Differential Count</div>
+                      <div class="panel-title-v2" style="padding-left: 20px;">Diff. count</div>
+                      <div class="panel-subtitle-v2">Differential Count</div>
                     </div>
-                    <div className="panel-stats-v2">
-                      <span>높음: <span className="red-text">3</span></span>
-                      <span>낮음: <span className="blue-text">0</span></span>
-                      <span>정상: <span className="black-text">7</span></span>
+                    <div class="panel-stats-v2">
+                      <span>높음: <span class="red-text">3</span></span>
+                      <span>낮음: <span class="blue-text">0</span></span>
+                      <span>정상: <span class="black-text">7</span></span>
                     </div>
-                    <span className="badge-v2 outline">10개 항목</span>
+                    <span class="badge-v2 outline">10개 항목</span>
                   </div>
 
-                  <table className="results-table-detail-v2">
+                  <table class="results-table-detail-v2">
                     <thead>
                     <tr>
                       <th>No</th>
@@ -1380,10 +1380,10 @@ const TestResultViewPage = () => `
                       <td>20025</td>
                       <td>
                         <div style="padding-left: 20px;">Diff. count</div>
-                        <div className="test-name-en-v2">Differential Count</div>
+                        <div class="test-name-en-v2">Differential Count</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="" placeholder="결과 입력" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="" placeholder="결과 입력" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td></td>
                       <td></td>
@@ -1398,10 +1398,10 @@ const TestResultViewPage = () => `
                       <td>20027</td>
                       <td>
                         <div style="padding-left: 20px;">Neutrophil %</div>
-                        <div className="test-name-en-v2">Neutrophil Percentage</div>
+                        <div class="test-name-en-v2">Neutrophil Percentage</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="66.80" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="66.80" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>%</td>
                       <td>40~70</td>
@@ -1420,10 +1420,10 @@ const TestResultViewPage = () => `
                       <td>20029</td>
                       <td>
                         <div style="padding-left: 20px;">Lymph %</div>
-                        <div className="test-name-en-v2">Lymphocyte Percentage</div>
+                        <div class="test-name-en-v2">Lymphocyte Percentage</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="26.90" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="26.90" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>%</td>
                       <td>20~45</td>
@@ -1442,10 +1442,10 @@ const TestResultViewPage = () => `
                       <td>20031</td>
                       <td>
                         <div style="padding-left: 20px;">Mono %</div>
-                        <div className="test-name-en-v2">Monocyte Percentage</div>
+                        <div class="test-name-en-v2">Monocyte Percentage</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="5.50" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="5.50" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>%</td>
                       <td>2~10</td>
@@ -1464,10 +1464,10 @@ const TestResultViewPage = () => `
                       <td>20033</td>
                       <td>
                         <div style="padding-left: 20px;">Eosino %</div>
-                        <div className="test-name-en-v2">Eosinophil Percentage</div>
+                        <div class="test-name-en-v2">Eosinophil Percentage</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="0.50" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="0.50" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>%</td>
                       <td>0~7</td>
@@ -1486,10 +1486,10 @@ const TestResultViewPage = () => `
                       <td>20035</td>
                       <td>
                         <div style="padding-left: 20px;">Basoph %</div>
-                        <div className="test-name-en-v2">Basophil Percentage</div>
+                        <div class="test-name-en-v2">Basophil Percentage</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="0.30" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="0.30" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>%</td>
                       <td>0~2</td>
@@ -1503,19 +1503,19 @@ const TestResultViewPage = () => `
                         </svg>
                       </td>
                     </tr>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>19</td>
                       <td>20037</td>
                       <td>
                         <div style="padding-left: 20px;">Lymph #</div>
-                        <div className="test-name-en-v2">Lymphocyte Count</div>
+                        <div class="test-name-en-v2">Lymphocyte Count</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="5.38" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="5.38" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>x10³/µl</td>
                       <td>1.0~4.8</td>
-                      <td><span className="badge-v2 red-small">H</span></td>
+                      <td><span class="badge-v2 red-small">H</span></td>
                       <td>5.12</td>
                       <td>5.20</td>
                       <td>5.28</td>
@@ -1525,19 +1525,19 @@ const TestResultViewPage = () => `
                         </svg>
                       </td>
                     </tr>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>20</td>
                       <td>20039</td>
                       <td>
                         <div style="padding-left: 20px;">Mono #</div>
-                        <div className="test-name-en-v2">Monocyte Count</div>
+                        <div class="test-name-en-v2">Monocyte Count</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="1.10" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="1.10" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>x10³/µl</td>
                       <td>0~0.80</td>
-                      <td><span className="badge-v2 red-small">H</span></td>
+                      <td><span class="badge-v2 red-small">H</span></td>
                       <td>1.05</td>
                       <td>1.07</td>
                       <td>1.08</td>
@@ -1547,19 +1547,19 @@ const TestResultViewPage = () => `
                         </svg>
                       </td>
                     </tr>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>21</td>
                       <td>20041</td>
                       <td>
                         <div style="padding-left: 20px;">Neutrophil #</div>
-                        <div className="test-name-en-v2">Neutrophil Count</div>
+                        <div class="test-name-en-v2">Neutrophil Count</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="13.37" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="13.37" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>x10³/µl</td>
                       <td>1.8~7.8</td>
-                      <td><span className="badge-v2 red-small">H</span></td>
+                      <td><span class="badge-v2 red-small">H</span></td>
                       <td>12.05</td>
                       <td>12.62</td>
                       <td>12.95</td>
@@ -1574,10 +1574,10 @@ const TestResultViewPage = () => `
                       <td>20043</td>
                       <td>
                         <div style="padding-left: 20px;">Eosinophil #</div>
-                        <div className="test-name-en-v2">Eosinophil Count</div>
+                        <div class="test-name-en-v2">Eosinophil Count</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="0.11" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="0.11" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>x10³/µl</td>
                       <td>0~0.50</td>
@@ -1596,10 +1596,10 @@ const TestResultViewPage = () => `
                       <td>20045</td>
                       <td>
                         <div style="padding-left: 20px;">Basophil #</div>
-                        <div className="test-name-en-v2">Basophil Count</div>
+                        <div class="test-name-en-v2">Basophil Count</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="0.06" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="0.06" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>x10³/µl</td>
                       <td>0~0.20</td>
@@ -1617,24 +1617,24 @@ const TestResultViewPage = () => `
                   </table>
                 </div>
 
-                <div className="panel-section-v2">
-                  <div className="panel-header-v2">
+                <div class="panel-section-v2">
+                  <div class="panel-header-v2">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path d="M5 7.5L10 12.5L15 7.5" stroke="#155DFC" stroke-width="1.67"/>
                     </svg>
                     <div>
-                      <div className="panel-title-v2">ESR</div>
-                      <div className="panel-subtitle-v2">적혈구침강속도</div>
+                      <div class="panel-title-v2">ESR</div>
+                      <div class="panel-subtitle-v2">적혈구침강속도</div>
                     </div>
-                    <div className="panel-stats-v2">
-                      <span>높음: <span className="red-text">1</span></span>
-                      <span>낮음: <span className="blue-text">0</span></span>
-                      <span>정상: <span className="black-text">0</span></span>
+                    <div class="panel-stats-v2">
+                      <span>높음: <span class="red-text">1</span></span>
+                      <span>낮음: <span class="blue-text">0</span></span>
+                      <span>정상: <span class="black-text">0</span></span>
                     </div>
-                    <span className="badge-v2 outline">1개 항목</span>
+                    <span class="badge-v2 outline">1개 항목</span>
                   </div>
 
-                  <table className="results-table-detail-v2">
+                  <table class="results-table-detail-v2">
                     <thead>
                     <tr>
                       <th>No</th>
@@ -1651,19 +1651,19 @@ const TestResultViewPage = () => `
                     </tr>
                     </thead>
                     <tbody>
-                    <tr className="abnormal-row-v2">
+                    <tr class="abnormal-row-v2">
                       <td>24</td>
                       <td>20063</td>
                       <td>
                         <div>ESR</div>
-                        <div className="test-name-en-v2">Erythrocyte Sedimentation Rate</div>
+                        <div class="test-name-en-v2">Erythrocyte Sedimentation Rate</div>
                       </td>
                       <td>
-                        <input type="text" className="result-input-v2" value="24" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
+                        <input type="text" class="result-input-v2" value="24" style="width: 80px; padding: 4px 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 14px;"/>
                       </td>
                       <td>mm/hr</td>
                       <td>&lt;=20</td>
-                      <td><span className="badge-v2 red-small">H</span></td>
+                      <td><span class="badge-v2 red-small">H</span></td>
                       <td>18</td>
                       <td>20</td>
                       <td>22</td>
@@ -1684,63 +1684,18 @@ const TestResultViewPage = () => `
     </div>
   </div>
 </div>
-\`;
-
-const NotFoundPage = () => \`
-<div className="page not-found-page-v2">
-  <div className="not-found-container-v2">
-    <div className="not-found-content-v2">
-      <div className="not-found-icon-wrapper-v2">
-        <div className="not-found-icon-circle-v2">
-          <img src="/404-icon.svg" alt="404 아이콘" width="96" height="96" />
-        </div>
-      </div>
-
-      <div className="not-found-text-v2">
-        <h1 className="not-found-title-v2">404</h1>
-        <h2 className="not-found-subtitle-v2">페이지를 찾을 수 없습니다</h2>
-        <p className="not-found-description-v2">요청하신 페이지가 존재하지 않거나 이동되었을 수 있습니다.</p>
-      </div>
-
-      <div className="not-found-info-box-v2">
-        <p>페이지 주소를 다시 확인해주시거나, 메인 대시보드로 돌아가주세요.</p>
-      </div>
-
-      <div className="not-found-buttons-v2">
-        <button className="btn-back-v2">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M12.5 5L7.5 10L12.5 15" stroke="#364153" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>이전 페이지</span>
-        </button>
-        <button className="btn-home-v2">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M2.5 10L10 2.5L17.5 10" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3.33 10V17.5C3.33 18.0523 3.77772 18.5 4.33 18.5H7.5V14.17C7.5 13.6177 7.94772 13.17 8.5 13.17H11.5C12.0523 13.17 12.5 13.6177 12.5 14.17V18.5H15.67C16.2223 18.5 16.67 18.0523 16.67 17.5V10" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>홈으로 가기</span>
-        </button>
-      </div>
-
-      <div className="not-found-footer-v2">
-        <p>문제가 계속되면 시스템 관리자에게 문의해주세요.</p>
-      </div>
-    </div>
-  </div>
-</div>
 `;
-
 const ProfilePage = () => `
-<div className='page profile-page-v2'>
-  <div className='dashboard-container-v2'>
-    <div className='sidebar-v2'>
-      <div className='sidebar-header-v2'>
-        <h2 className='sidebar-title-v2'>MediGuard LIS</h2>
-        <p className='sidebar-subtitle-v2'>차세대 환자 안전 플랫폼</p>
+<div class='page profile-page-v2'>
+  <div class='dashboard-container-v2'>
+    <div class='sidebar-v2'>
+      <div class='sidebar-header-v2'>
+        <h2 class='sidebar-title-v2'>MediGuard LIS</h2>
+        <p class='sidebar-subtitle-v2'>차세대 환자 안전 플랫폼</p>
       </div>
 
-      <nav className='sidebar-nav-v2'>
-        <button className='nav-item-v2'>
+      <nav class='sidebar-nav-v2'>
+        <button class='nav-item-v2'>
           <svg
             width='20'
             height='20'
@@ -1758,7 +1713,7 @@ const ProfilePage = () => `
           </svg>
           <span>대시보드</span>
         </button>
-        <button className='nav-item-v2'>
+        <button class='nav-item-v2'>
           <svg
             width='20'
             height='20'
@@ -1777,7 +1732,7 @@ const ProfilePage = () => `
           </svg>
           <span>검사 결과 보기</span>
         </button>
-        <button className='nav-item-v2'>
+        <button class='nav-item-v2'>
           <svg
             width='20'
             height='20'
@@ -1795,12 +1750,12 @@ const ProfilePage = () => `
         </button>
       </nav>
 
-      <div className='sidebar-footer-v2'>
-        <button className='user-info-v2'>
-          <div className='user-name-v2'>김의사</div>
-          <div className='user-role-v2'>의사</div>
+      <div class='sidebar-footer-v2'>
+        <button class='user-info-v2'>
+          <div class='user-name-v2'>김의사</div>
+          <div class='user-role-v2'>의사</div>
         </button>
-        <button className='logout-btn-v2'>
+        <button class='logout-btn-v2'>
           <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
             <path
               d='M10.67 4.67L13.33 8L10.67 11.33'
@@ -1815,9 +1770,9 @@ const ProfilePage = () => `
       </div>
     </div>
 
-    <div className='main-content-v2'>
-      <div className='content-header-v2'>
-        <button className='tab-button-v2 active'>
+    <div class='main-content-v2'>
+      <div class='content-header-v2'>
+        <button class='tab-button-v2 active'>
           <span>프로필 설정</span>
           <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
             <path d='M8 4L12 8L8 12' stroke='#155DFC' stroke-width='1.33' />
@@ -1825,20 +1780,20 @@ const ProfilePage = () => `
         </button>
       </div>
 
-      <div className='content-body-v2'>
-        <div className='page-header-v2'>
+      <div class='content-body-v2'>
+        <div class='page-header-v2'>
           <div>
-            <h2 className='page-title-v2'>프로필 설정</h2>
-            <p className='page-subtitle-v2'>
+            <h2 class='page-title-v2'>프로필 설정</h2>
+            <p class='page-subtitle-v2'>
               사용자 정보를 설정할 수 있습니다.
             </p>
           </div>
         </div>
 
-        <div className='profile-settings-card-v2'>
-          <div className='profile-header-section-v2'>
-            <div className='profile-avatar-wrapper-v2'>
-              <div className='profile-avatar-v2'>
+        <div class='profile-settings-card-v2'>
+          <div class='profile-header-section-v2'>
+            <div class='profile-avatar-wrapper-v2'>
+              <div class='profile-avatar-v2'>
                 <svg width='64' height='64' viewBox='0 0 64 64' fill='none'>
                   <circle cx='32' cy='32' r='32' fill='#dbeafe' />
                   <path
@@ -1851,7 +1806,7 @@ const ProfilePage = () => `
                   />
                 </svg>
               </div>
-              <button className='profile-avatar-edit-v2'>
+              <button class='profile-avatar-edit-v2'>
                 <svg width='20' height='20' viewBox='0 0 20 20' fill='none'>
                   <path
                     d='M14.1667 2.5C14.4417 2.225 14.8083 2.08333 15.1917 2.08333C15.575 2.08333 15.9417 2.225 16.2167 2.5L17.5 3.78333C17.775 4.05833 17.9167 4.425 17.9167 4.80833C17.9167 5.19167 17.775 5.55833 17.5 5.83333L9.16667 14.1667L5.83333 15L6.66667 11.6667L14.1667 4.16667L14.1667 2.5Z'
@@ -1863,45 +1818,45 @@ const ProfilePage = () => `
                 </svg>
               </button>
             </div>
-            <div className='profile-header-text-v2'>
-              <h3 className='profile-header-title-v2'>프로필 설정</h3>
-              <p className='profile-header-subtitle-v2'>
+            <div class='profile-header-text-v2'>
+              <h3 class='profile-header-title-v2'>프로필 설정</h3>
+              <p class='profile-header-subtitle-v2'>
                 계정 정보를 관리하고 업데이트하세요
               </p>
             </div>
           </div>
 
-          <div className='profile-form-v2'>
-            <div className='form-section-v2'>
-              <h4 className='form-section-title-v2'>기본 정보</h4>
-              <div className='form-group-v2'>
-                <label className='form-label-v2'>
+          <div class='profile-form-v2'>
+            <div class='form-section-v2'>
+              <h4 class='form-section-title-v2'>기본 정보</h4>
+              <div class='form-group-v2'>
+                <label class='form-label-v2'>
                   이름
-                  <span className='required-mark-v2'>*</span>
+                  <span class='required-mark-v2'>*</span>
                 </label>
                 <input
                   type='text'
-                  className='search-input-v2'
+                  class='search-input-v2'
                   value='김의사'
                   placeholder='이름을 입력하세요'
                 />
               </div>
 
-              <div className='form-group-v2'>
-                <label className='form-label-v2'>
+              <div class='form-group-v2'>
+                <label class='form-label-v2'>
                   직책
-                  <span className='required-mark-v2'>*</span>
+                  <span class='required-mark-v2'>*</span>
                 </label>
                 <input
                   type='text'
-                  className='search-input-v2'
+                  class='search-input-v2'
                   value='의사'
                   placeholder='직책을 입력하세요'
                 />
               </div>
             </div>
 
-            <div className='info-box-v2'>
+            <div class='info-box-v2'>
               <svg width='20' height='20' viewBox='0 0 20 20' fill='none'>
                 <circle
                   cx='10'
@@ -1928,9 +1883,9 @@ const ProfilePage = () => `
               </span>
             </div>
 
-            <div className='profile-actions-v2'>
-              <button className='btn-cancel-v2'>취소</button>
-              <button className='btn-save-v2'>
+            <div class='profile-actions-v2'>
+              <button class='btn-cancel-v2'>취소</button>
+              <button class='btn-save-v2'>
                 <svg width='20' height='20' viewBox='0 0 20 20' fill='none'>
                   <path
                     d='M16.67 2.5H3.33C2.6 2.5 2 3.1 2 3.83V16.17C2 16.9 2.6 17.5 3.33 17.5H16.67C17.4 17.5 18 16.9 18 16.17V3.83C18 3.1 17.4 2.5 16.67 2.5Z'
