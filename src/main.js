@@ -1,12 +1,20 @@
+import { Storage } from './storage.js';
 import { Router } from './route.js';
-import { DashboardPage } from './page/DashboardPage.js';
-import { LoginPage } from './page/LoginPage.js';
+import { DashBoardControl } from './control/DashBoardControl.js';
+import { LoginControl } from './control/LoginControl.js';
+import { TestResultViewControl } from './control/TestResultViewControl.js';
+// import { ProfilePage } from './control/ProfilePage.js';
+// import { NotFoundPage } from './control/NotFoundPage.js';
 
-Router.addRoute('/', () => (document.body.innerHTML = DashboardPage()));
-Router.addRoute('/login', () => (document.body.innerHTML = LoginPage));
-Router.addRoute('/testResultView', () => console.log('검사 결과 보기'));
-Router.addRoute('/profile', () => console.log('프로필 페이지'));
-Router.addRoute('/error', () => console.log('오류 페이지'));
+Storage.init();
+
+Router.addRoute('/', DashBoardControl);
+Router.addRoute('/login', LoginControl);
+Router.addRoute('/testResultView', TestResultViewControl);
+// Router.addRoute('/profile', () => (ProfilePage.render()));
+// Router.addRoute('404', () => (NotFoundPage.render()));
+
+//Router.addRoute('404', () => document.body.innerHTML = NotFoundPage());
 
 Router.init();
 

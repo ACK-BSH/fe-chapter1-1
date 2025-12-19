@@ -1,3 +1,6 @@
+import { Storage } from './storage.js';
+import { LayoutControl } from './control/LayoutControl.js';
+
 const Router = (function () {
   const routes = {};
 
@@ -6,18 +9,35 @@ const Router = (function () {
   }
 
   function navigate(path) {
-    const handler = routes[path] || routes['404'];
-    handler();
+    if (location.pathname !== path) {
+      history.pushState({}, '', path);
+    }
+    handleRoute();
   }
 
   function init() {
-    window.addEventListener('hashchange', () => {
-      const path = window.location.hash.slice(1) || '/';
-      navigate(path);
-    });
+    window.addEventListener('popstate', () => handleRoute());
+    handleRoute();
+  }
 
-    // 초기 라우트 처리
-    navigate(window.location.hash.slice(1) || '/');
+  function handleRoute() {
+    const path = window.location.pathname;
+    const userStat = Storage.get();
+
+    const ControlClass = routes[path] || routes['/'];
+
+    if (!ControlClass) return;
+
+    if (path === '/login') {
+      new ControlClass('root', userStat).render();
+      return;
+    }
+
+    if (!document.getElementById('main-container')) {
+      new LayoutControl('root', userStat).render();
+    }
+
+    new ControlClass('main-container', userStat).render();
   }
 
   return {

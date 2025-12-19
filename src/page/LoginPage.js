@@ -1,5 +1,5 @@
 const LoginPage = () => `
-<div class='page login-page-v2'>
+<div class='page login-page-v2' id='login'>
   <div class='login-container-v2'>
     <div class='login-header'>
       <div class='login-header-content'>
@@ -43,7 +43,7 @@ const LoginPage = () => `
           />
         </div>
 
-        <button type='submit' class='btn-primary-v2'>
+        <button type='submit' class='btn-primary-v2' id='Submit'>
           로그인
         </button>
       </form>
@@ -52,4 +52,4 @@ const LoginPage = () => `
 </div>
 `;
 
-export { LoginPage };
+export {LoginPage}

@@ -1,5 +1,5 @@
 const TestResultViewPage = () => `
-<div class="page test-result-view-page">
+<div class="page test-result-view-page" id='rslt'>
   <div class="dashboard-container-v2">
     <div class="sidebar-v2">
       <div class="sidebar-header-v2">
@@ -1013,4 +1013,4 @@ const TestResultViewPage = () => `
 </div>
 `;
 
-export { TestResultViewPage };
+export {TestResultViewPage};
