@@ -23,6 +23,7 @@ const Storage = {
     const currentState = this.get();
     const newState = { ...currentState, ...updates };
     this.save(newState);
+    return newState;
   }
 };
 

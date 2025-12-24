@@ -1,5 +1,5 @@
 const NotFoundPage = () => `
-  <div class="page not-found-page-v2">
+  <div class="page not-found-page-v2" id='error'>
     <div class="not-found-container-v2">
       <div class="not-found-content-v2">
         <div class="not-found-icon-wrapper-v2">
@@ -19,13 +19,13 @@ const NotFoundPage = () => `
         </div>
 
         <div class="not-found-buttons-v2">
-          <button class="btn-back-v2">
+          <button class="btn-back-v2" id='back'>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path d="M12.5 5L7.5 10L12.5 15" stroke="#364153" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>이전 페이지</span>
           </button>
-          <button class="btn-home-v2">
+          <button class="btn-home-v2" id='home'>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path d="M2.5 10L10 2.5L17.5 10" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M3.33 10V17.5C3.33 18.0523 3.77772 18.5 4.33 18.5H7.5V14.17C7.5 13.6177 7.94772 13.17 8.5 13.17H11.5C12.0523 13.17 12.5 13.6177 12.5 14.17V18.5H15.67C16.2223 18.5 16.67 18.0523 16.67 17.5V10" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>

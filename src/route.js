@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 import { Storage } from './storage.js';
 import { LayoutControl } from './control/LayoutControl.js';
 
@@ -15,6 +17,10 @@ const Router = (function () {
     handleRoute();
   }
 
+  function back() {
+    history.back();
+  }
+
   function init() {
     window.addEventListener('popstate', () => handleRoute());
     handleRoute();
@@ -24,25 +30,38 @@ const Router = (function () {
     const path = window.location.pathname;
     const userStat = Storage.get();
 
-    const ControlClass = routes[path] || routes['/'];
+    const ControlClass = routes[path] || routes['/404'] || routes['/'];
 
-    if (!ControlClass) return;
-
-    if (path === '/login') {
-      new ControlClass('root', userStat).render();
+    if (!routes[path] && path !== '/') {
+      new ControlClass('error', userStat).render();
       return;
     }
 
-    if (!document.getElementById('main-container')) {
-      new LayoutControl('root', userStat).render();
+    if (path === '/login') {
+      new ControlClass('login', userStat).render();
+      return;
     }
 
-    new ControlClass('main-container', userStat).render();
+    if (path === '/' || userStat.isLogin) {
+      if (!document.getElementById('main-container')) {
+        new LayoutControl('root', userStat).render();
+      }
+
+      if (path === '/') {
+        new ControlClass('main-container', userStat).render();
+      } else if (userStat.isLogin) {
+        new ControlClass('main-container', userStat).render();
+      }
+    } else if (path !== '/login') {
+      navigate('/login');
+      return;
+    }
   }
 
   return {
     addRoute,
     navigate,
+    back,
     init
   };
 })();

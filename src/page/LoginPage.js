@@ -19,7 +19,6 @@ const LoginPage = () => `
         <h1 class='login-title'>LIS</h1>
       </div>
     </div>
-
     <div class='login-card-v2'>
       <div class='card-title'>로그인</div>
       <form class='login-form-v2'>
@@ -32,7 +31,6 @@ const LoginPage = () => `
             required
           />
         </div>
-
         <div class='input-group-v2'>
           <label htmlFor='passwordV2'>비밀번호</label>
           <input
@@ -42,7 +40,6 @@ const LoginPage = () => `
             required
           />
         </div>
-
         <button type='submit' class='btn-primary-v2' id='Submit'>
           로그인
         </button>
@@ -52,4 +49,4 @@ const LoginPage = () => `
 </div>
 `;
 
-export {LoginPage}
+export { LoginPage };

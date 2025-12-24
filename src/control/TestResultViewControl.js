@@ -1,18 +1,21 @@
-import { Router } from '../route.js';
-import {TestResultViewPage} from '../page/TestResultViewPage.js';
+import { TestResultViewPage } from '../page/TestResultViewPage.js';
 
 class TestResultViewControl {
-    constructor(containerId, userStat) {
-      this.containerId = containerId;
-      this.container = null;
-      this.userStat = userStat;
+  constructor(containerId, userStat) {
+    this.containerId = containerId;
+    this.container = null;
+    this.userStat = userStat;
+  }
+
+  render() {
+    this.container = document.getElementById(this.containerId);
+
+    if (!this.container) {
+      return;
     }
 
-    render() {
-      document.body.innerHTML = TestResultViewPage(this.userStat);
-      this.container = document.getElementById(this.containerId);
-    }
+    this.container.innerHTML = TestResultViewPage(this.userStat);
+  }
 }
 
-
-export {TestResultViewControl};
+export { TestResultViewControl };

@@ -1,23 +1,21 @@
-import {DashBoardPage} from '../page/DashBoardPage.js';
+import { DashBoardPage } from '../page/DashBoardPage.js';
 
 class DashBoardControl {
-    constructor(containerId, userStat) {
-      this.containerId = containerId;
-      this.container = null;
-      this.userStat = userStat;
+  constructor(containerId, userStat) {
+    this.containerId = containerId;
+    this.container = null;
+    this.userStat = userStat;
+  }
+
+  render() {
+    this.container = document.getElementById(this.containerId);
+
+    if (!this.container) {
+      return;
     }
 
-    render() {
-      this.container = document.getElementById(this.containerId);
-
-      if (!this.container) {
-        return;
-      }
-
-      this.container.innerHTML = DashBoardPage(this.userStat);
-    }
-
+    this.container.innerHTML = DashBoardPage(this.userStat);
+  }
 }
 
-
-export {DashBoardControl};
+export { DashBoardControl };

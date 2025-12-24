@@ -1,76 +1,130 @@
-import {SideBarPage} from '../page/SideBarPage.js';
-import {Router} from '../route.js';
+import { SideBarPage } from '../page/SideBarPage.js';
+import { Router } from '../route.js';
+import { observer } from '../observer.js';
 
 class SideBarControl {
-    constructor(containerId, userStat) {
-      this.containerId = containerId;
-      this.container = null;
-      this.userStat = userStat;
+  constructor(containerId, _userStat) {
+    this.containerId = containerId;
+    this.container = null;
+    this.userStat = observer.getState();
+    observer.addObserver(this);
+  }
+
+  render() {
+    this.container = document.getElementById(this.containerId);
+
+    if (!this.container) {
+      return;
     }
 
-    render() {
+    this.container.innerHTML = SideBarPage(this.userStat);
 
-      this.container = document.getElementById(this.containerId);
+    if (this.container) {
+      // 디자인이 부셔져서 주석 후 HTML 수정으로 변경
+      this.attachEventListeners();
+    }
+  }
 
-      if (!this.container) {
-        return;
-      }
+  update(state) {
+    this.userStat = state;
+    this.updateLoginStatus();
+  }
 
-      this.container.innerHTML = SideBarPage(this.userStat);
+  updateLoginStatus() {
+    if (!this.container) {
+      return;
+    }
 
-      if (this.container) {
-        //this.updateLoginStatus();  디자인이 부셔져서 주석 후 HTML 수정으로 변경
-        this.attachEventListeners();
+    const infoBtn = this.container.querySelector('#info');
+    const nameData = this.container.querySelector('.user-name-v2');
+    const classData = this.container.querySelector('.user-role-v2');
+    const userBtn = this.container.querySelector('.user-info-v2');
+    const loginText = this.container.querySelector('#loginText');
+
+    if (infoBtn) {
+      if (this.userStat.isLogin) {
+        infoBtn.classList.remove('hidden');
+      } else {
+        infoBtn.classList.add('hidden');
       }
     }
 
-    updateLoginStatus(){
-
-      const pro = this.container.querySelector('#Profile');
-      const userInfo = this.container.querySelector('#UserStatus');
-
-      if(this.userStat.isLogin)
-      {
-        pro.style.display = 'block';
-        userInfo.style.display = 'block';
-      }
-      else
-      {
-        pro.style.display = 'none';
-        userInfo.style.display = 'none';
-      }
-
+    if (nameData) {
+      nameData.textContent = this.userStat.userName;
     }
 
-    attachEventListeners() {
-      this.container.addEventListener('click', e => {
-        // target.id 로 했을때 왜 글자부분은 안먹히고 공백만 되는지
-        if (e.target.closest('#Result')) {
-            if(this.userStat.isLogin)
-            {
-              Router.navigate('/testResultView');
-            }
-            else
-            {
-              Router.navigate('/login');
-            }
+    if (classData) {
+      classData.textContent = this.userStat.userClass;
+    }
+
+    if (userBtn) {
+      if (this.userStat.isLogin) {
+        userBtn.classList.remove('hidden');
+      } else {
+        userBtn.classList.add('hidden');
+      }
+    }
+
+    if (loginText) {
+      loginText.textContent = this.userStat.isLogin ? '로그아웃' : '로그인';
+    }
+  }
+
+  attachEventListeners() {
+    this.container.addEventListener('click', e => {
+      // target.id 로 했을때 왜 글자부분은 안먹히고 공백만 되는지
+      const btn = e.target.closest('.nav-item-v2');
+      if (btn) {
+        this.container
+          .querySelector('.nav-item-v2.active')
+          ?.classList.remove('active');
+
+        btn.classList.add('active');
+      }
+
+      if (e.target.closest('#board')) {
+        Router.navigate('/');
+      }
+
+      if (e.target.closest('#Result')) {
+        if (this.userStat.isLogin) {
+          Router.navigate('/testResultView');
+        } else {
+          Router.navigate('/login');
+        }
+      }
+
+      if (e.target.closest('#info')) {
+        if (this.userStat.isLogin) {
+          Router.navigate('/profile');
+        } else {
+          Router.navigate('/login');
+        }
+      }
+
+      if (e.target.closest('.user-info-v2')) {
+        if (this.userStat.isLogin) {
+          Router.navigate('/profile');
+        } else {
+          Router.navigate('/login');
+        }
+      }
+
+      if (e.target.closest('.logout-btn-v2')) {
+        if (this.userStat.isLogin) {
+          observer.setState({
+            isLogin: false,
+            userName: '',
+            userClass: ''
+          });
+
+          observer.removeObserver(this);
         }
 
-        if(e.target.closest('.logout-btn-v2')){
-          this.userStat.isLogin = false;
-          this.userStat.userName = '';
-          this.userStat.userClass = '';
-
-          localStorage.setItem('appState', JSON.stringify(this.userStat));
-
-          Router.navigate('/');
-        }
-
-
-      });
-    }
-
+        Router.navigate('/login');
+      }
+    });
+  }
 }
 
-
-export {SideBarControl};
+export { SideBarControl };
