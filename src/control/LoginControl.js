@@ -10,41 +10,38 @@ class LoginControl {
   }
 
   render() {
-    if (this.userStat && this.userStat.isLogin) {
+    if (this.userStat && this.userStat.isLoggedIn) {
       Router.navigate('/');
       return;
     }
 
-    document.body.innerHTML = LoginPage();
     this.container = document.getElementById(this.containerId);
-
     if (this.container) {
+      this.container.innerHTML = LoginPage();
       this.attachEventListeners();
     }
   }
 
   attachEventListeners() {
-    this.container.addEventListener('click', e => {
+    const form = this.container.querySelector('.login-form-v2');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
       const emailCheck = this.container.querySelector('#email');
       const passCheck = this.container.querySelector('#passwordV2');
 
-      if (e.target.closest('#Submit')) {
-        if (!emailCheck.checkValidity()) {
-          return;
-        }
-
-        if (!passCheck.checkValidity()) {
-          return;
-        }
-
-        observer.setState({
-          isLogin: true,
-          userName: '성훈',
-          userClass: '의사'
-        });
-
-        Router.navigate('/');
+      if (!emailCheck.checkValidity() || !passCheck.checkValidity()) {
+        return;
       }
+
+      observer.setState({
+        isLoggedIn: true,
+        name: emailCheck.value.split('@')[0],
+        role: '의사'
+      });
+
+      Router.navigate('/');
     });
   }
 }

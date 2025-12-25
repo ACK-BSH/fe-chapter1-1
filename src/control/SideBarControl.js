@@ -42,7 +42,7 @@ class SideBarControl {
     const loginText = this.container.querySelector('#loginText');
 
     if (infoBtn) {
-      if (this.userStat.isLogin) {
+      if (this.userStat.isLoggedIn) {
         infoBtn.classList.remove('hidden');
       } else {
         infoBtn.classList.add('hidden');
@@ -50,15 +50,15 @@ class SideBarControl {
     }
 
     if (nameData) {
-      nameData.textContent = this.userStat.userName;
+      nameData.textContent = this.userStat.name;
     }
 
     if (classData) {
-      classData.textContent = this.userStat.userClass;
+      classData.textContent = this.userStat.role;
     }
 
     if (userBtn) {
-      if (this.userStat.isLogin) {
+      if (this.userStat.isLoggedIn) {
         userBtn.classList.remove('hidden');
       } else {
         userBtn.classList.add('hidden');
@@ -66,13 +66,13 @@ class SideBarControl {
     }
 
     if (loginText) {
-      loginText.textContent = this.userStat.isLogin ? '로그아웃' : '로그인';
+      loginText.textContent = this.userStat.isLoggedIn ? '로그아웃' : '로그인';
     }
   }
 
   attachEventListeners() {
     this.container.addEventListener('click', e => {
-      // target.id 로 했을때 왜 글자부분은 안먹히고 공백만 되는지
+      // target.id 로 했을때 왜 글자부분은 안먹히고 공백만 되는지 -- 버블링
       const btn = e.target.closest('.nav-item-v2');
       if (btn) {
         this.container
@@ -87,7 +87,7 @@ class SideBarControl {
       }
 
       if (e.target.closest('#Result')) {
-        if (this.userStat.isLogin) {
+        if (this.userStat.isLoggedIn) {
           Router.navigate('/testResultView');
         } else {
           Router.navigate('/login');
@@ -95,7 +95,7 @@ class SideBarControl {
       }
 
       if (e.target.closest('#info')) {
-        if (this.userStat.isLogin) {
+        if (this.userStat.isLoggedIn) {
           Router.navigate('/profile');
         } else {
           Router.navigate('/login');
@@ -103,7 +103,7 @@ class SideBarControl {
       }
 
       if (e.target.closest('.user-info-v2')) {
-        if (this.userStat.isLogin) {
+        if (this.userStat.isLoggedIn) {
           Router.navigate('/profile');
         } else {
           Router.navigate('/login');
@@ -111,11 +111,11 @@ class SideBarControl {
       }
 
       if (e.target.closest('.logout-btn-v2')) {
-        if (this.userStat.isLogin) {
+        if (this.userStat.isLoggedIn) {
           observer.setState({
-            isLogin: false,
-            userName: '',
-            userClass: ''
+            isLoggedIn: false,
+            name: '',
+            role: ''
           });
 
           observer.removeObserver(this);

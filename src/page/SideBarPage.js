@@ -44,7 +44,7 @@ const SideBarPage = userStat =>
       </svg>
       <span>검사 결과 보기</span>
     </button>
-    <button class='nav-item-v2 ${userStat.isLogin ? '' : 'hidden'}' id='info' >
+    <button class='nav-item-v2 ${userStat.isLoggedIn ? '' : 'hidden'}' id='info' >
       <svg
         width='20'
         height='20'
@@ -62,9 +62,9 @@ const SideBarPage = userStat =>
   </nav>
 
   <div class='sidebar-footer-v2' id='UserStatus'>
-    <button class='user-info-v2 ${userStat.isLogin ? '' : 'hidden'}'>
-      <div class='user-name-v2'>${userStat.userName}</div>
-      <div class='user-role-v2'>${userStat.userClass}</div>
+    <button class='user-info-v2 ${userStat.isLoggedIn ? '' : 'hidden'}'>
+      <div class='user-name-v2'>${userStat.name}</div>
+      <div class='user-role-v2'>${userStat.role}</div>
     </button>
     <button class='logout-btn-v2'>
       <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
@@ -76,7 +76,7 @@ const SideBarPage = userStat =>
         <path d='M6 8H13.33' stroke='#364153' stroke-width='1.33' />
         <path d='M2 2V14' stroke='#364153' stroke-width='1.33' />
       </svg>
-      <span id='loginText'>${userStat.isLogin ? '로그아웃' : '로그인'}</span>
+      <span id='loginText'>${userStat.isLoggedIn ? '로그아웃' : '로그인'}</span>
     </button>
   </div>
 </div>

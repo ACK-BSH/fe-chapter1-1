@@ -42,9 +42,9 @@ class ProfileControl {
         }
 
         observer.setState({
-          isLogin: true,
-          userName: inName.value,
-          userClass: inClass.value
+          isLoggedIn: true,
+          name: inName.value,
+          role: inClass.value
         });
 
         Storage.save(this.userStat);

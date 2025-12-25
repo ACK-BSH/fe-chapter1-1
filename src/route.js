@@ -38,18 +38,18 @@ const Router = (function () {
     }
 
     if (path === '/login') {
-      new ControlClass('login', userStat).render();
+      new ControlClass('root', userStat).render();
       return;
     }
 
-    if (path === '/' || userStat.isLogin) {
+    if (path === '/' || (userStat && userStat.isLoggedIn)) {
       if (!document.getElementById('main-container')) {
         new LayoutControl('root', userStat).render();
       }
 
       if (path === '/') {
         new ControlClass('main-container', userStat).render();
-      } else if (userStat.isLogin) {
+      } else if (userStat.isLoggedIn) {
         new ControlClass('main-container', userStat).render();
       }
     } else if (path !== '/login') {

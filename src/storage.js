@@ -1,22 +1,22 @@
 const Storage = {
   init() {
     const storageInfo = {
-      isLogin: false,
-      userName: '',
-      userClass: ''
+      isLoggedIn: false,
+      name: '',
+      role: ''
     };
 
-    if (!localStorage.getItem('DataStorage')) {
+    if (!localStorage.getItem('user')) {
       this.save(storageInfo);
     }
   },
 
   get() {
-    return JSON.parse(localStorage.getItem('DataStorage'));
+    return JSON.parse(localStorage.getItem('user'));
   },
 
   save(state) {
-    localStorage.setItem('DataStorage', JSON.stringify(state));
+    localStorage.setItem('user', JSON.stringify(state));
   },
 
   update(updates) {
